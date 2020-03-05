@@ -1,0 +1,5 @@
+install.packages('tidyverse', repos="http://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+#清华大学镜像
+
+cjb_trans <- as(cjb,'transactions')
+#将数据转为事务，用单引号！！！！
