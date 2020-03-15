@@ -1,0 +1,19 @@
+# KNN算法
+- k折交叉检验
+- 模型的评估
+- KNN算法
+- 参数调优优化结果
+- 最佳k值以及最佳kernel
+- ggplot2进行绘图
+## Tasks
+- 导出训练模型
+- 在web服务器中部署
+- 找到的best_k值和best_kernel应用于模型
+## **Dependency**
+- library(tidyverse)
+- library(readxl)
+- library(caret)
+- library(kknn)
+## **Mirror**
+#清华大学镜像  
+install.packages('xxx', repos="http://mirrors.tuna.tsinghua.edu.cn/CRAN/")  
