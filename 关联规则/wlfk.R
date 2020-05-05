@@ -1,8 +1,7 @@
 #加载数据
 library(tidyverse)
-library(reader)
-cjb_url <- "https://github.com/byaxb/RDataAnalytics/raw/master/data/cjb.csv"
-cjb <- read.csv(cjb_url)
+library(readxl)
+cjb <- read_excel("D:/workspace-Rstudio/R-workpace/knn/data/cjb.xlsx")
 #数据预处理
 #数据分箱
 as_five_grade_scores <- function(x){

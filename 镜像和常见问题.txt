@@ -1,4 +1,4 @@
-install.packages('tidyverse', repos="http://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+install.packages('NCmisc', repos="http://mirrors.tuna.tsinghua.edu.cn/CRAN/")
 #清华大学镜像
 
 cjb_trans <- as(cjb,'transactions')

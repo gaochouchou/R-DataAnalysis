@@ -1,7 +1,7 @@
 #载入数据
 library(tidyverse)
 library(readxl)
-cjb <- read_excel("data/cjb.xlsx")
+cjb <- read_excel("D:/workspace-Rstudio/R-workpace/knn/data/cjb.xlsx")
 
 #对于分类与回归问题，除了认识数据中的其他一些数据探索外
 #通常需要观察不同自变量，相对于不同因变量取值时的数据分布
@@ -163,3 +163,11 @@ cat("\tFinised at:", as.character(ep), "]\n")
 cat("[Time Ellapsed:\t",
     difftime(ep, sp, units = "secs"),
     " seconds]\n")
+
+save(yourModel,"YourModel.RData")
+##下次需要使用时
+load("YourModel.RData")
+##这样就可以直接调用你的模型
+
+install.packages('NCmisc', repos="http://mirrors.tuna.tsinghua.edu.cn/CRAN/")
+#清华大学镜像
